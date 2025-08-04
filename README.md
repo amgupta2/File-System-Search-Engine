@@ -16,6 +16,29 @@ This search engine crawls local file systems, builds inverted indices, and provi
 - **Web Interface**: Multithreaded HTTP server with static file serving
 - **Memory Safety**: Comprehensive memory leak detection and prevention
 
+### Repository Layout
+
+```
+hw1/                    # Core data structures
+     LinkedList.c/h      # Doubly-linked list
+     HashTable.c/h       # Chained hash table
+     test_*.cc           # Unit tests
+hw2/                    # File processing and indexing
+     FileParser.c/h      # Text file parsing
+     CrawlFileTree.c/h   # Directory traversal
+     MemIndex.c/h        # In-memory index
+     searchshell.c       # Command-line interface
+hw3/                    # Persistent storage
+     WriteIndex.cc       # Index serialization
+     *Reader.cc/h        # File-based data access
+     QueryProcessor.cc   # Multi-index search
+hw4/                    # Web server
+     HttpServer.cc/h     # Main server logic
+     HttpConnection.cc   # Request handling
+     http333d.cc         # Server executable
+projdocs/               # Test documents and data
+```
+
 ## Architecture
 
 ### Core Components
