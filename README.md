@@ -93,7 +93,7 @@ The binary index format includes:
 ```bash
 # Clone the repository
 git clone [your-repo-url]
-cd file-system-search-engine
+cd file-system-search-engine/hw4
 
 # Build all components
 make
