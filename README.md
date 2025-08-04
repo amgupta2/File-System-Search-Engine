@@ -107,20 +107,10 @@ valgrind --leak-check=full ./test_suite
 
 ### Usage Examples
 
-#### Command Line Search
-```bash
-# Build index from directory
-./buildfileindex ./documents ./index.idx
-
-# Interactive search shell
-./filesearchshell ./index.idx
-Enter query: search terms
-```
-
 #### Web Interface
 ```bash
 # Start web server on port 8080
-./http333d 8080 ./documents ./index1.idx ./index2.idx
+./http333d 5555 ../projdocs ../projdocs/unit_test_indices/*
 
 # Access via browser
 # http://localhost:8080/
